@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+
+$transform: capitalize, uppercase, lowercase;
+
+h1 {
+    font-size: $h1-fsize;
+    font-weight: normal;
+    line-height: 34px;
+    margin: 0;
+}
+h2 {
+    font-size: $h2-fsize;
+    font-weight: bold;
+    line-height: 41px;
+    margin: 0;
+}
+h3 {
+    font-size: $h3-fsize;
+    font-weight: 600;
+    line-height: 38px;
+    margin: 0;
+}
+h4 {
+    font-size: $h4-fsize;
+    font-weight: bold;
+    line-height: 33px;
+    margin: 0;
+}
+h5 {
+    font-size: $h5-fsize;
+    font-weight: bold;
+    line-height: 25px;
+    margin: 0;
+}
+h6 {
+    font-size: $h6-fsize;
+    font-weight: bold;
+    line-height: 22px;
+    margin: 0;
+}
+p {
+    font-size: $default-fsize;
+    font-weight: normal;
+    line-height: 19px;
+    margin: 0;
+}
+
+@each $val in $transform {
+    .text-#{$val} {
+        text-transform: $val;
+    }
+}
+
+.font-bolder {
+    font-weight: bolder;
+}
+.font-goldman {
+    font-family: 'Goldman', cursive;
+}

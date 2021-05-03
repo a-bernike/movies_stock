@@ -1,0 +1,5 @@
+REACT_APP_PROTOCOL=http
+REACT_APP_HOST=localhost:3000
+REACT_APP_ASSET_HOST=http://localhost:3000/assets
+REACT_APP_API_URL=http://www.omdbapi.com
+REACT_APP_API_KEY=faf7e5bb

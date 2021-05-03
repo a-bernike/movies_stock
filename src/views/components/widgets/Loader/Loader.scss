@@ -1,0 +1,46 @@
+@import './src/styles/variables';
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 16px;
+    &.fullscreen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($white, 0.6);
+        z-index: 999;
+        img {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            -webkit-animation: MoveUpDown 1s linear infinite;
+            animation: MoveUpDown 1s linear infinite;
+        }
+    }
+    img {
+        width: 50px;
+        height: 50px;
+        -webkit-animation: Rotate 1s linear infinite;
+        animation: Rotate 1s linear infinite;
+    }
+    @keyframes MoveUpDown {
+        0%, 100% {
+            bottom: 50%;
+        }
+        50% {
+            bottom: 40%;
+        }
+    }
+    @keyframes Rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@import './src/styles/variables';
+
+.home-list {
+    padding: 0 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    &__header {
+        padding-bottom: 16px;
+        border-bottom: dashed 1px $blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .text-input {
+            margin-top: 5px;
+            width: 85%;
+        }
+    }
+    &__scroller {
+        margin-top: 24px;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        &::after {
+            content: "";
+            flex: 1;
+        }
+    }
+    &__empty {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .modal {
+        &__body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

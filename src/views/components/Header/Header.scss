@@ -1,0 +1,18 @@
+@import './src/styles/variables';
+
+.header {
+    background-color: $blue-2;
+    color: #ffffff;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: solid 3px $red;
+    img {
+        width: 130px;
+    }
+}

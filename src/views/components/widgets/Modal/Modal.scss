@@ -1,0 +1,54 @@
+@import './src/styles/variables';
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__overlay {
+        background-color: rgba($black, 0.8);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    &__wrapper {
+        max-width: 95%;
+        min-width: 50%;
+        min-height: 50%;
+        max-height: 95%;
+        position: relative;
+        z-index: 102;
+        background-color: $white;
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    &__header {
+        background-color: $blue-2;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 10px 16px;
+        h2 {
+            flex: 1;
+            font-size: 24px;
+            color: $white;
+        }
+        .button {
+            padding: 2px 6px;
+            height: auto;
+            margin-left: 15px;
+        }
+    }
+    &__body {
+        flex: 1;
+    }
+}

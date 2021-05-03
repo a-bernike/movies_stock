@@ -1,0 +1,45 @@
+@import './src/styles/variables';
+
+.detail {
+    padding: 80px 16px;
+    &__content {
+        margin-top: 20px;
+    }
+    section {
+        border-bottom: dashed 1px $blue;
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    h2 {
+        text-align: center;
+        margin-top: 4px;
+    }
+    h3 {
+        font-style: italic;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: normal;
+    }
+    &__thumbnail {
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+    }
+    &-info-tile {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 4px;
+        h6 {
+            margin-right: 10px;
+            min-width: 100px;
+        }
+        ul {
+            margin: 0;
+            padding-left: 16px;
+        }
+    }
+}

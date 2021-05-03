@@ -1,0 +1,13 @@
+@import './src/styles/variables';
+
+.text-input {
+    height: 30px;
+    border-radius: 4px;
+    border: solid 1px $blue-3;
+    outline: none;
+    transition: all .3s ease;
+    padding: 0 5px;
+    &:focus, &:active {
+        border-color: $blue;
+    }
+}
