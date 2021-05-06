@@ -8,7 +8,9 @@
 5. Open (http://localhost:3000/).
 
 ## How to run unit testing
-- `npm run test`.
+- To run all tests in components folder: `npm run test components/`.
+- To run all tests in containers folder: `npm run test containers/`.
+- To run all tests in helpers folder: `npm run test helpers/`.
 
 ##### Extra Notes:
 - Node v12.13.1 and NPM v6.12.1 are used to build this project.
